@@ -7,13 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #001E62;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Volksparkstadion_Hamburg_2017-11.jpg/1920px-Volksparkstadion_Hamburg_2017-11.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: white;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
             text-align: center;
             color: #001E62;
@@ -29,7 +30,7 @@
             gap: 20px;
         }
         .spieler {
-            background-color: #003366;
+            background-color: rgba(0, 51, 102, 0.9);
             border-radius: 8px;
             padding: 15px;
             width: 220px;
@@ -44,8 +45,28 @@
             margin: 4px 0;
             font-size: 14px;
         }
+        .spielplan {
+            background-color: rgba(0, 30, 98, 0.9);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        .spielplan h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .spielplan table {
+            width: 100%;
+            border-collapse: collapse;
+            color: white;
+        }
+        .spielplan th, .spielplan td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+        }
         footer {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9);
             color: #001E62;
             text-align: center;
             padding: 15px;
@@ -57,56 +78,28 @@
 <body>
     <header>
         <h1>HSV Fanpage</h1>
-        <p>Aktueller Kader 2025 &mdash; Quelle: transfermarkt.de</p>
+        <p>Aktueller Kader & Spielplan 2025 – Quelle: transfermarkt.de & DFL</p>
     </header>
 
     <section class="spieler-container">
+        <!-- Spieler kannst du hier einfügen -->
         <div class="spieler">
             <img src="https://i.imgur.com/xkT1g2c.jpg" alt="Ludovit Reis" />
             <h3>Ludovit Reis</h3>
-            <p>Position: Zentrales Mittelfeld</p>
+            <p>Position: Mittelfeld</p>
             <p>Alter: 25</p>
             <p>Nationalität: Niederlande</p>
         </div>
         <div class="spieler">
             <img src="https://i.imgur.com/1TbkkFg.jpg" alt="Robert Glatzel" />
             <h3>Robert Glatzel</h3>
-            <p>Position: Mittelstürmer</p>
+            <p>Position: Stürmer</p>
             <p>Alter: 31</p>
             <p>Nationalität: Deutschland</p>
         </div>
-        <div class="spieler">
-            <img src="https://i.imgur.com/WCuYi0U.jpg" alt="Miro Muheim" />
-            <h3>Miro Muheim</h3>
-            <p>Position: Linker Verteidiger</p>
-            <p>Alter: 27</p>
-            <p>Nationalität: Schweiz</p>
-        </div>
-        <div class="spieler">
-            <img src="https://i.imgur.com/nEqCVPC.jpg" alt="Dennis Hadzikadunic" />
-            <h3>Dennis Hadzikadunic</h3>
-            <p>Position: Innenverteidiger</p>
-            <p>Alter: 26</p>
-            <p>Nationalität: Bosnien-Herzegowina</p>
-        </div>
-        <div class="spieler">
-            <img src="https://i.imgur.com/MKmnyTb.jpg" alt="Ignace Van der Brempt" />
-            <h3>Ignace Van der Brempt</h3>
-            <p>Position: Rechter Verteidiger</p>
-            <p>Alter: 23</p>
-            <p>Nationalität: Belgien</p>
-        </div>
-        <div class="spieler">
-            <img src="https://i.imgur.com/zZBt0rw.jpg" alt="Mikkel Kaufmann" />
-            <h3>Mikkel Kaufmann</h3>
-            <p>Position: Stürmer</p>
-            <p>Alter: 24</p>
-            <p>Nationalität: Dänemark</p>
-        </div>
+        <!-- Weitere Spieler folgen... -->
     </section>
 
-    <footer>
-        &copy; 2025 HSV Fanpage | Daten: transfermarkt.de
-    </footer>
-</body>
-</html>
+    <section class="spielplan">
+        <h2>Bundesliga-Spielplan HSV 2025/26</h2>
+        <table>
